@@ -96,8 +96,8 @@
 // export default AdminDashboard;
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import UserDetail from "../admin/UserDetail";
-import BlogDetail from "../admin/BlogDetail";
+import UserDetail from "../UserDetail/UserDetail";
+import BlogDetail from "../BlogDetail/BlogDetail";
 import { Button } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 

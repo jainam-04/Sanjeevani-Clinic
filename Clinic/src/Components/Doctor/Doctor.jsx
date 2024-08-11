@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
+import doctorImage from "../../../dist/assets/images/doctor.png";
+import entry1 from "../../../dist/assets/images/entry.png";
+import entry2 from "../../../dist/assets/images/entry2.png";
+import entry3 from "../../../dist/assets/images/entry3.png";
+import reception from "../../../dist/assets/images/reception.png";
 
 function Doctor() {
   // Array of image paths
-  const images = [
-    '/dist/assets/images/doctor.png',
-    '/dist/assets/images/entry.png',
-    '/dist/assets/images/entry2.png',
-    '/dist/assets/images/entry3.png',
-    '/dist/assets/images/reception.png',
-  ];
+  const images = [doctorImage, entry1, entry2, entry3, reception];
 
   // State for managing the current slide
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,19 +24,19 @@ function Doctor() {
 
   return (
     <div className="relative w-full mt-6 mb-8 p-10 ">
-      
       {/* Carousel wrapper */}
       <div className="overflow-hidden rounded-lg">
         <div
           className="flex transition-transform duration-700 ease-in-out"
-          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          style={{transform: `translateX(-${currentSlide * 100}%)`}}
         >
           {/* Render each image in the array */}
           {images.map((image, index) => (
             <div key={index} className="w-full flex-shrink-0">
               <img
                 src={image}
-                className="w-full h-screen md:h-screen object-cover p-10 " style={{borderRadius: '100px'}}
+                className="w-full h-screen md:h-screen object-cover p-10 "
+                style={{borderRadius: "100px"}}
                 alt={`Slide ${index + 1}`}
               />
             </div>

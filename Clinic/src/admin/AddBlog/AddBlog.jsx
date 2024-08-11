@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import MyContext from "../context/MyContext";
 import { useNavigate } from "react-router-dom";
-import Loader from "../Components/Loader";
+import Loader from "../../Components/Loader/Loader";
 import { Timestamp, collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // Import getDownloadURL
 import { fireDB, fireStorage } from "../firebase/FirebaseConfig";

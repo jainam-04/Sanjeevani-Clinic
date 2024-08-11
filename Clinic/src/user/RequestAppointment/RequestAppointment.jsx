@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { toast, Toaster } from "react-hot-toast";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import { fireDB } from "../firebase/FirebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 import emailjs from "@emailjs/browser";
 
 // import { firebase } from 'firebase/app';

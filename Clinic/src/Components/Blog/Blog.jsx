@@ -170,7 +170,7 @@
 
 import React, { useState, useEffect } from "react";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import { fireDB } from "../firebase/FirebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 import { useNavigate } from "react-router-dom";
 
 function Blog() {

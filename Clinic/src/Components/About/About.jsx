@@ -104,13 +104,11 @@
 // export default About;
 
 import React from "react";
-import Blog from "./Blog";
-import Testimonials from "./Testimonials";
-import Contact from "./Contact";
-import QNa from "./Qna/QNa";
-
+import Blog from "../Blog/Blog";
+import Testimonials from "../Testimonials/Testimonials";
+import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
-import QNA from "./Qna/QNa";
+import QNA from "../Qna/QNa";
 
 function About() {
   return (

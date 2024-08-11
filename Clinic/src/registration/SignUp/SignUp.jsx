@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import myContext from "../context/MyContext";
+import myContext from "../../context/MyContext";
 import toast from "react-hot-toast";
-import Loader from "../Components/Loader";
+import Loader from "../../Components/Loader/Loader";
 
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { auth, fireDB } from "../firebase/FirebaseConfig";

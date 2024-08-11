@@ -8,7 +8,7 @@ import {
   deleteDoc,
   doc,
 } from "firebase/firestore";
-import { fireDB } from "../firebase/FirebaseConfig";
+import { fireDB } from "../../firebase/FirebaseConfig";
 import { toast } from "react-hot-toast";
 
 const BlogDetail = () => {

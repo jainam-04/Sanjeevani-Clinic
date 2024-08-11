@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import logo from '../../../dist/assets/images/logo.jpg';
 
 function Navbar() {
   const userJson = localStorage.getItem("users");
@@ -66,8 +67,8 @@ function Navbar() {
               to='/'
               className='text-gray-900 text-3xl font-semibold  flex items-center'
             >
-              <img src='/dist/assets/images/logo.jpg' className='h-14 w-auto ' />
-            </Link>
+              <img src={logo} className='h-14 w-auto ' />
+            </Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6">
             {navList}
