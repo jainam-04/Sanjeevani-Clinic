@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import Loader from "../../Components/Loader/Loader";
 
 import { Timestamp, addDoc, collection } from "firebase/firestore";
-import { auth, fireDB } from "../firebase/FirebaseConfig";
+import { auth, fireDB } from "../../firebase/FirebaseConfig";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const Signup = () => {

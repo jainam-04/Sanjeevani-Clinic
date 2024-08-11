@@ -101,8 +101,8 @@ import BlogDetail from "../BlogDetail/BlogDetail";
 import { Button } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 
-import Appoinment from "./Appoinment";
-import MyContext from "../context/MyContext";
+import Appoinment from "../Appointment/Appointment";
+import MyContext from "../../context/MyContext";
 import { useContext } from "react";
 
 const AdminDashboard = () => {

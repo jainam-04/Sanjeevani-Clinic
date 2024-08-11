@@ -1,24 +1,24 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./Components/Navbar";
-import About from "./Components/About";
-import Blog from "./Components/Blog";
-import Testimonials from "./Components/Testimonials";
-import Login from "./registration/Login";
-import Contact from "./Components/Contact";
+import Navbar from "./Components/Navbar/Navbar";
+import About from "./Components/About/About";
+import Blog from "./Components/Blog/Blog";
+import Testimonials from "./Components/Testimonials/Testimonials";
+import Login from "./registration/Login/Login";
+import Contact from "./Components/Contact/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SignUp from "./registration/SignUp";
+import SignUp from "./registration/SignUp/SignUp";
 import MyState from "./context/MyState";
-import UserDashboard from "./user/UserDashboard";
-import AdminDashboard from "./admin/AdminDashboard";
-import AddBlog from "./admin/AddBlog";
-import NoPage from "./Components/NoPage";
+import UserDashboard from "./user/UserDashboard/UserDashboard";
+import AdminDashboard from "./admin/AdminDashboard/AdminDashboard";
+import AddBlog from "./admin/AddBlog/AddBlog";
+import NoPage from "./Components/NoPage/NoPage";
 import { Toaster } from "react-hot-toast";
 import { ProtectedRouteForUser } from "./protectedRoute/ProtectedRouteForUser";
 import { ProtectedRouteForAdmin } from "./protectedRoute/ProtectedRouteForAdmin";
-import RequestAppointment from "./user/RequestAppointment";
-import Footer from "./Components/Footer";
-import Doctor from "./Components/Doctor";
+import RequestAppointment from "./user/RequestAppointment/RequestAppointment";
+import Footer from "./Components/Footer/Footer";
+import Doctor from "./Components/Doctor/Doctor";
 // import Appointment from "./admin/Appoinment";
 function App() {
   return (
