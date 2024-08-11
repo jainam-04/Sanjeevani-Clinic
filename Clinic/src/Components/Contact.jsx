@@ -6,15 +6,15 @@ function Contact() {
       <h1 className='text-center text-5xl my-10'>Please Feel Free To <br /> Contact Us</h1>
       <div className='flex justify-around items-center my-10'>
         <div className='bg-blue-gray-500 h-52 w-80 text-center py-14' style={{ borderRadius: "2vw" }}>
-          <i class="fa fa-map-marker text-6xl"></i>
+          <i className="fa fa-map-marker text-6xl"></i>
           <p className='mt-5 text-lg'>New RTO office road, Aditya Nagar, Solapur, Maharashtra 413004</p>
         </div>
         <div className='bg-blue-gray-500 h-52 w-80 text-center py-14' style={{ borderRadius: "2vw" }}>
-          <i class="fa fa-phone text-6xl" aria-hidden="true"></i>
+          <i className="fa fa-phone text-6xl" aria-hidden="true"></i>
           <p className='mt-5 text-lg'>07947430848</p>
         </div>
         <div className='bg-blue-gray-500 h-52 w-80 text-center py-14' style={{ borderRadius: "2vw" }}>
-          <i class="fa fa-envelope text-6xl" aria-hidden="true"></i>
+          <i className="fa fa-envelope text-6xl" aria-hidden="true"></i>
           <p className='mt-5 text-lg'>info@gmail.com</p>
         </div>
       </div>
