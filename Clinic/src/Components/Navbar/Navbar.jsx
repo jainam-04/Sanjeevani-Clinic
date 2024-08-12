@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-import logo from '../../../dist/assets/images/logo.jpg';
+import {Link, useNavigate} from "react-router-dom";
+import logo from "../../../dist/assets/images/logo.jpg";
+import "./Navbar.css";
 
 function Navbar() {
   const userJson = localStorage.getItem("users");
@@ -8,7 +9,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   const logout = () => {
-    localStorage.removeItem("users"); 
+    localStorage.removeItem("users");
     navigate("/login");
   };
 
@@ -47,8 +48,10 @@ function Navbar() {
         <li>
           <Link to="/login">Login</Link>
         </li>
+      ) : isAdmin ? (
+        adminNavList
       ) : (
-        isAdmin ? adminNavList : userNavList
+        userNavList
       )}
       {user && (
         <li className="cursor-pointer" onClick={logout}>
@@ -63,11 +66,8 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-          <Link
-              to='/'
-              className='text-gray-900 text-3xl font-semibold  flex items-center'
-            >
-              <img src={logo} className='h-14 w-auto ' />
+            <Link to="/" className="text-gray-900 text-3xl font-semibold">
+              <img src={logo} className="h-14 w-auto " />
             </Link>
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6">
