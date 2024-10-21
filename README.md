@@ -35,7 +35,7 @@ This project is built using the **FERN** stack and **Tailwind CSS**:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/sanjeevani-clinic.git
+    git clone https://github.com/jainam-04/Sanjeevani-Clinic.git
     cd sanjeevani-clinic
     ```
 
@@ -51,7 +51,7 @@ This project is built using the **FERN** stack and **Tailwind CSS**:
     - Create a `.env` file in the `server` directory and add your environment variables for Firebase, database, etc.
     - Start the backend server:
       ```bash
-      npm start
+      npx nodemon app.js
       ```
 
 3. ### Frontend Setup (React Vite)
